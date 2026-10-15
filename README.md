@@ -4,6 +4,10 @@
 
 公开访问：<https://zhangyiling108-code.github.io/ylzc-fde/>
 
+服务报价：<https://zhangyiling108-code.github.io/ylzc-fde/pricing.html>
+
+`pricing.html` 包含诊断、验证、生产化三档服务，以及跨部门诊断、持续运营、付款与验收说明。报价及范围以客户正式报价单和合同为准。
+
 ## 本地预览
 
 ```bash

@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="翊凌智策 FDE 服务报价：单场景诊断、真实样本验证、生产化落地与持续运营。按阶段投入，按约定验收。">
+  <meta name="theme-color" content="#f6f3ec">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:title" content="服务与报价｜翊凌智策">
+  <meta property="og:description" content="单场景诊断 ¥12,800，单场景验证 ¥38,000–68,000，生产化落地 ¥98,000 起。按阶段投入，按约定验收。">
+  <meta property="og:url" content="https://zhangyiling108-code.github.io/ylzc-fde/pricing.html">
+  <link rel="canonical" href="https://zhangyiling108-code.github.io/ylzc-fde/pricing.html">
+  <title>服务与报价｜翊凌智策</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&amp;family=Noto+Serif+SC:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f3ec;
+      --bg-soft: #eee9df;
+      --ink: #1b2822;
+      --muted: #5e6a63;
+      --line: rgba(27, 40, 34, .14);
+      --line-strong: rgba(27, 40, 34, .26);
+      --accent: #96532e;
+      --accent-soft: rgba(164, 95, 55, .09);
+      --sans: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", sans-serif;
+      --serif: "Noto Serif SC", "Songti SC", serif;
+      --page: min(1180px, calc(100% - 96px));
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.85;
+      -webkit-font-smoothing: antialiased;
+    }
+    ::selection { background: var(--accent); color: var(--bg); }
+    a { color: inherit; text-decoration: none; }
+    a:focus-visible, summary:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 5px;
+    }
+    a, summary { -webkit-tap-highlight-color: transparent; }
+    .wrap { width: var(--page); margin: 0 auto; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(246, 243, 236, .96);
+      backdrop-filter: blur(8px);
+    }
+    .nav {
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+    .brand { font: 600 16px var(--serif); letter-spacing: .16em; white-space: nowrap; }
+    .brand small { margin-left: 10px; color: var(--muted); font: 11px var(--sans); letter-spacing: .12em; }
+    .nav-links { display: flex; align-items: center; gap: 30px; }
+    .nav-links a { display: inline-flex; align-items: center; min-height: 44px; color: var(--muted); font-size: 12px; letter-spacing: .06em; }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-links .current { color: var(--accent); }
+    .eyebrow, .section-no, .label {
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: .18em;
+    }
+    .hero { padding: 70px 0 54px; }
+    .hero-top { display: flex; justify-content: space-between; gap: 24px; align-items: center; }
+    .preview-note { margin: 0; color: var(--muted); font-size: 11px; letter-spacing: .06em; }
+    .hero-layout { display: grid; grid-template-columns: 1.35fr 1fr; gap: 64px; align-items: end; margin-top: 30px; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 {
+      margin-bottom: 0;
+      font-family: var(--serif);
+      font-size: clamp(44px, 4.6vw, 66px);
+      font-weight: 600;
+      line-height: 1.36;
+      letter-spacing: -.035em;
+    }
+    .accent { color: var(--accent); }
+    .hero-copy p { margin-bottom: 22px; max-width: 420px; color: var(--muted); font-size: 16px; }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 11px; color: var(--muted); letter-spacing: .06em; }
+    .hero-meta span + span::before { content: "/"; color: var(--accent); margin-right: 18px; }
+    section { scroll-margin-top: 8px; }
+    .section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 28px; margin-bottom: 26px; }
+    .section-heading h2 { margin: 0; font: 500 24px/1.5 var(--serif); }
+    .packages { padding: 22px 0 70px; }
+    .package-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line-strong); border-bottom: 1px solid var(--line-strong); }
+    .package { display: flex; flex-direction: column; min-width: 0; padding: 30px 28px 28px; }
+    .package + .package { border-left: 1px solid var(--line-strong); }
+    .package.entry { background: var(--accent-soft); }
+    .package-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 20px; }
+    .package-no { color: var(--accent); font-size: 11px; letter-spacing: .1em; }
+    .entry-label { color: var(--accent); font-size: 11px; }
+    .package h3 { margin-bottom: 10px; font: 600 clamp(24px, 2.2vw, 30px)/1.4 var(--serif); }
+    .package-purpose { margin-bottom: 22px; color: var(--muted); font-size: 13px; }
+    .price { display: flex; align-items: baseline; gap: 4px; min-height: 60px; font-variant-numeric: tabular-nums; white-space: nowrap; letter-spacing: -.04em; }
+    .price .currency { font-size: 19px; }
+    .price strong { font: 500 clamp(34px, 3.05vw, 44px)/1.25 var(--sans); letter-spacing: -.05em; }
+    .price .range { font-size: clamp(17px, 1.6vw, 22px); letter-spacing: -.04em; }
+    .price .from { margin-left: 4px; color: var(--muted); font-size: 13px; letter-spacing: 0; }
+    .duration { margin: 0 0 25px; color: var(--muted); font-size: 12px; }
+    .package-content { border-top: 1px solid var(--line); padding-top: 20px; }
+    .package-content h4 { margin: 0 0 10px; font-size: 12px; font-weight: 500; color: var(--accent); letter-spacing: .06em; }
+    .deliverables { margin: 0 0 22px; padding: 0; list-style: none; }
+    .deliverables li { position: relative; margin: 8px 0; padding-left: 16px; font-size: 13px; line-height: 1.8; }
+    .deliverables li::before { content: "·"; position: absolute; left: 0; color: var(--accent); }
+    .package-scope { margin: 0 0 22px; color: var(--muted); font-size: 12px; line-height: 1.8; }
+    .package-scope strong { font-weight: 500; color: var(--ink); }
+    .package-bottom { margin-top: auto; }
+    .acceptance { margin: 0; padding: 17px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+    .acceptance b { color: var(--ink); font-weight: 500; }
+    .text-link { display: flex; justify-content: space-between; gap: 16px; align-items: center; min-height: 46px; padding-top: 6px; font-size: 13px; }
+    .text-link:hover { color: var(--accent); }
+    .text-link .arrow { color: var(--accent); font-size: 19px; }
+    .package-note { margin: 18px 0 0; color: var(--muted); font-size: 11px; }
+    .extras { display: grid; grid-template-columns: 1fr 1fr; margin-top: 34px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .extra { padding: 23px 28px 23px 0; }
+    .extra + .extra { border-left: 1px solid var(--line); padding-left: 32px; padding-right: 0; }
+    .extra-heading { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px 20px; margin-bottom: 8px; }
+    .extra h3 { margin: 0; font: 500 19px/1.5 var(--serif); }
+    .extra-price { color: var(--accent); font-size: 15px; font-weight: 500; }
+    .extra p { margin: 0; max-width: 480px; color: var(--muted); font-size: 12px; }
+    .terms { padding: 68px 0; background: var(--bg-soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .terms-head { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 40px; margin-bottom: 34px; }
+    .terms-head h2 { margin: -6px 0 0; font: 500 clamp(27px, 3vw, 38px)/1.45 var(--serif); }
+    .terms-head p { margin: 12px 0 0; color: var(--muted); font-size: 13px; }
+    .payment-table { width: 100%; border-collapse: collapse; text-align: left; font-size: 13px; }
+    .payment-table th, .payment-table td { padding: 17px 20px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    .payment-table th { border-top: 1px solid var(--line-strong); color: var(--muted); font-size: 11px; letter-spacing: .06em; font-weight: 500; }
+    .payment-table th:first-child, .payment-table td:first-child { padding-left: 0; }
+    .payment-table th:last-child, .payment-table td:last-child { padding-right: 0; }
+    .payment-table tbody tr:last-child td { border-bottom-color: var(--line-strong); }
+    .payment-table td:first-child { width: 21%; font-weight: 500; }
+    .payment-table td:nth-child(2) { width: 27%; color: var(--accent); font-variant-numeric: tabular-nums; }
+    .payment-table td:last-child { color: var(--muted); }
+    .terms-note { margin: 16px 0 0; font-size: 11px; color: var(--muted); }
+    .faq { margin-top: 38px; border-top: 1px solid var(--line-strong); }
+    details { border-bottom: 1px solid var(--line); }
+    summary { position: relative; padding: 18px 38px 18px 0; cursor: pointer; list-style: none; font-size: 13px; font-weight: 500; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; position: absolute; right: 3px; top: 14px; color: var(--accent); font-size: 21px; font-weight: 400; }
+    details[open] summary::after { content: "−"; }
+    details p { max-width: 920px; margin: 0; padding: 0 38px 22px 0; color: var(--muted); font-size: 13px; }
+    .contact { padding: 76px 0 0; }
+    .contact-panel { display: grid; grid-template-columns: minmax(0, 1fr) 180px; gap: 70px; align-items: center; }
+    .contact h2 { margin: 18px 0 20px; font: 600 clamp(32px, 3.7vw, 49px)/1.45 var(--serif); letter-spacing: -.02em; }
+    .contact-copy { max-width: 690px; color: var(--muted); font-size: 14px; margin-bottom: 0; }
+    .contact-outcome { margin: 14px 0 0; color: var(--muted); font-size: 12px; }
+    .contact-start { margin: 22px 0 0; color: var(--accent); font-size: 13px; font-weight: 500; }
+    .contact-qr { margin: 0; text-align: center; }
+    .contact-qr img { display: block; width: 180px; max-width: 100%; height: auto; border: 1px solid var(--line-strong); background: white; }
+    .contact-qr figcaption { margin-top: 10px; color: var(--muted); font-size: 11px; letter-spacing: .04em; }
+    footer { display: flex; justify-content: space-between; gap: 24px; margin-top: 60px; padding: 23px 0 28px; border-top: 1px solid var(--line); color: var(--muted); font-size: 10px; letter-spacing: .04em; }
+    .skip-link { position: fixed; top: 8px; left: 8px; z-index: 30; padding: 8px 16px; background: var(--ink); color: var(--bg); transform: translateY(-160%); }
+    .skip-link:focus { transform: translateY(0); }
+    @media (max-width: 1100px) {
+      :root { --page: calc(100% - 64px); }
+      .hero-layout { gap: 40px; grid-template-columns: 1.25fr 1fr; }
+      .package { padding-left: 21px; padding-right: 21px; }
+      .price strong { font-size: 34px; }
+      .price .range { font-size: 17px; }
+      .terms-head { grid-template-columns: 140px minmax(0, 1fr); gap: 30px; }
+    }
+    @media (max-width: 900px) {
+      .hero-layout { grid-template-columns: 1fr; gap: 24px; }
+      .hero-copy { display: flex; justify-content: space-between; align-items: end; gap: 30px; }
+      .hero-copy p { margin: 0; max-width: 480px; font-size: 14px; }
+      .hero-meta { min-width: 140px; flex-direction: column; gap: 4px; }
+      .hero-meta span + span::before { content: none; }
+      .package { padding-left: 17px; padding-right: 17px; }
+      .package h3 { font-size: 24px; }
+      .package-purpose { min-height: 47px; }
+      .price { flex-wrap: wrap; column-gap: 3px; min-height: 62px; align-content: start; }
+      .price strong { font-size: 31px; }
+      .price .range { font-size: 16px; }
+      .price .currency { font-size: 16px; }
+    }
+    @media (max-width: 740px) {
+      :root { --page: calc(100% - 40px); }
+      html { scroll-padding-top: 88px; }
+      .nav { min-height: 68px; gap: 12px; }
+      .brand { font-size: 15px; }
+      .brand small, .nav-links .company-link { display: none; }
+      .nav-links { gap: 19px; }
+      .nav-links a { font-size: 11px; }
+      .hero { padding: 39px 0 38px; }
+      .hero-top { align-items: start; gap: 14px; }
+      .eyebrow { font-size: 10px; letter-spacing: .12em; }
+      .preview-note { font-size: 10px; white-space: nowrap; }
+      .hero-layout { margin-top: 25px; }
+      h1 { font-size: clamp(36px, 7.5vw, 50px); line-height: 1.45; letter-spacing: -.04em; }
+      .hero-copy { display: block; }
+      .hero-copy p { max-width: 100%; }
+      .hero-meta { flex-direction: row; gap: 6px 12px; margin-top: 20px; font-size: 10px; }
+      .hero-meta span + span::before { content: "/"; margin-right: 12px; }
+      .section-heading { display: block; margin-bottom: 20px; }
+      .section-heading h2 { margin-top: 10px; font-size: 22px; }
+      .packages { padding-top: 10px; padding-bottom: 44px; }
+      .package-grid { grid-template-columns: 1fr; }
+      .package { padding: 26px; }
+      .package + .package { border-left: 0; border-top: 1px solid var(--line-strong); }
+      .package h3 { font-size: 28px; }
+      .package-top { margin-bottom: 17px; }
+      .package-purpose { min-height: auto; margin-bottom: 18px; }
+      .price { flex-wrap: nowrap; min-height: 58px; }
+      .price strong { font-size: 42px; }
+      .price .range { font-size: 23px; }
+      .price .currency { font-size: 20px; }
+      .deliverables li { font-size: 14px; }
+      .extras { grid-template-columns: 1fr; margin-top: 26px; }
+      .extra { padding: 23px 0; }
+      .extra + .extra { border-left: 0; border-top: 1px solid var(--line); padding: 23px 0; }
+      .extra h3 { font-size: 20px; }
+      .terms { padding: 44px 0; }
+      .terms-head { grid-template-columns: 1fr; gap: 16px; margin-bottom: 24px; }
+      .terms-head h2 { margin: 0; font-size: 30px; }
+      .payment-table { font-size: 12px; }
+      .payment-table th, .payment-table td { padding: 15px 9px; }
+      .payment-table td:first-child { width: 25%; }
+      .payment-table td:nth-child(2) { width: 28%; }
+      .contact { padding-top: 46px; }
+      .contact-panel { grid-template-columns: 1fr; gap: 30px; }
+      .contact h2 { font-size: 34px; }
+      .contact-qr { justify-self: start; }
+      .contact-qr img { width: 170px; }
+      footer { display: block; margin-top: 36px; }
+      footer span { display: block; }
+      footer span + span { margin-top: 6px; }
+    }
+    @media (max-width: 360px) {
+      :root { --page: calc(100% - 32px); }
+      .nav-links { gap: 13px; }
+      .hero-top { display: block; }
+      .preview-note { margin-top: 8px; }
+      h1 { font-size: 33px; }
+      .package { padding: 23px 20px; }
+      .price strong { font-size: 37px; }
+      .price .range { font-size: 20px; }
+      .hero-meta { gap: 6px 9px; }
+      .hero-meta span + span::before { margin-right: 9px; }
+      .payment-table th, .payment-table td { padding-left: 6px; padding-right: 6px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media print {
+      .site-header { position: static; }
+      .nav-links, .skip-link, .text-link { display: none; }
+      :root { --page: 100%; }
+      body { font-size: 10pt; background: white; }
+      .hero { padding: 22px 0; }
+      h1 { font-size: 30pt; }
+      .package { padding: 18px; break-inside: avoid; }
+      .package h3 { font-size: 18pt; }
+      .price strong { font-size: 25pt; }
+      .price .range { font-size: 15pt; }
+      .packages, .terms, .contact { padding-top: 28px; padding-bottom: 24px; }
+      .terms, .package.entry { background: transparent; }
+      details { break-inside: avoid; }
+      details::details-content { content-visibility: visible; }
+      .contact-panel { grid-template-columns: 1fr 130px; }
+      .contact h2 { font-size: 25pt; }
+      .contact-qr img { width: 130px; }
+      footer { margin-top: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#packages">跳转到服务报价</a>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="主导航">
+      <a class="brand" href="index.html">翊凌智策 <small>YLZC · FDE</small></a>
+      <div class="nav-links">
+        <a class="company-link" href="index.html">企业介绍 ↗</a>
+        <a class="current" href="#packages">服务报价</a>
+        <a href="#terms">合作说明</a>
+        <a href="#contact">联系</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="hero wrap">
+      <div class="hero-top">
+        <div class="eyebrow">FDE SERVICES &amp; PRICING</div>
+        <p class="preview-note">服务报价 · 2026.10</p>
+      </div>
+      <div class="hero-layout">
+        <h1>每一步投入，<br>都有<span class="accent">清晰的交付。</span></h1>
+        <div class="hero-copy">
+          <p>从单场景诊断开始，用真实样本验证价值，再决定是否进入生产化。每个阶段独立报价、独立验收。</p>
+          <div class="hero-meta" aria-label="合作原则"><span>远程优先</span><span>按阶段推进</span><span>增强既有系统</span></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="packages wrap" id="packages" aria-labelledby="packages-title">
+      <div class="section-heading">
+        <div class="section-no">01 / 服务与报价</div>
+        <h2 id="packages-title">按业务所处阶段，选择第一步。</h2>
+      </div>
+      <div class="package-grid">
+        <article class="package entry" aria-labelledby="diagnosis-title">
+          <div class="package-top"><span class="package-no">01 / DIAGNOSE</span><span class="entry-label">建议从这里开始</span></div>
+          <h3 id="diagnosis-title">单场景诊断包</h3>
+          <p class="package-purpose">判断哪里值得做，明确第一笔投入。</p>
+          <div class="price" aria-label="人民币一万二千八百元"><span class="currency">¥</span><strong>12,800</strong></div>
+          <p class="duration">5 个工作日 · 单一业务流程</p>
+          <div class="package-content">
+            <h4>你会拿到</h4>
+            <ul class="deliverables">
+              <li>现状流程图与问题优先级</li>
+              <li>数据、权限与样本缺口清单</li>
+              <li>首阶段范围、验证方式与停止条件</li>
+              <li>一页决策卡与一次结论沟通</li>
+            </ul>
+            <p class="package-scope"><strong>标准范围</strong><br>1 个流程、最多 3 类关键角色、最多 3 次远程访谈；围绕现有资料与代表性异常样本展开。</p>
+          </div>
+          <div class="package-bottom">
+            <p class="acceptance"><b>验收看什么</b><br>约定清单交齐，范围、依赖、验证口径与继续／停止条件明确。</p>
+            <a class="text-link" href="#contact"><span>沟通诊断范围</span><span class="arrow" aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="package" aria-labelledby="validation-title">
+          <div class="package-top"><span class="package-no">02 / VALIDATE</span><span class="entry-label">用真实样本验证</span></div>
+          <h3 id="validation-title">单场景验证包</h3>
+          <p class="package-purpose">跑通一个小闭环，再决定是否扩大。</p>
+          <div class="price" aria-label="人民币三万八千至六万八千元"><span class="currency">¥</span><strong>38,000</strong><span class="range">–68,000</span></div>
+          <p class="duration">3–6 周 · 诊断后确认范围与报价</p>
+          <div class="package-content">
+            <h4>你会拿到</h4>
+            <ul class="deliverables">
+              <li>一个可运行的原型或工作流</li>
+              <li>真实样本测试集与试跑记录</li>
+              <li>准确率、处理时长等约定指标对比</li>
+              <li>人工兜底规则与继续／调整／停止建议</li>
+            </ul>
+            <p class="package-scope"><strong>标准范围</strong><br>1 个场景、1 个试点团队，以现有工具和可用数据验证；生产级部署与深度系统集成另行确定。</p>
+          </div>
+          <div class="package-bottom">
+            <p class="acceptance"><b>验收看什么</b><br>按预先约定的测试集、基线与观察期，核验功能和试跑结果。</p>
+            <a class="text-link" href="#contact"><span>讨论验证场景</span><span class="arrow" aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="package" aria-labelledby="production-title">
+          <div class="package-top"><span class="package-no">03 / DEPLOY</span><span class="entry-label">让能力进入日常业务</span></div>
+          <h3 id="production-title">生产化落地包</h3>
+          <p class="package-purpose">补齐运行与交接，让团队持续使用。</p>
+          <div class="price" aria-label="人民币九万八千元起"><span class="currency">¥</span><strong>98,000</strong><span class="from">起</span></div>
+          <p class="duration">参考 8–12 周 · 按范围正式报价</p>
+          <div class="package-content">
+            <h4>你会拿到</h4>
+            <ul class="deliverables">
+              <li>约定范围内的系统集成与部署</li>
+              <li>权限、日志、异常处理与运行监测</li>
+              <li>试运行记录、验收材料与交接文档</li>
+              <li>SOP、培训与维护责任分工</li>
+            </ul>
+            <p class="package-scope"><strong>报价依据</strong><br>接口数量、部署环境、数据准备、参与部门与现场投入；在诊断或验证完成后冻结范围。</p>
+          </div>
+          <div class="package-bottom">
+            <p class="acceptance"><b>验收看什么</b><br>约定功能、接口和运行指标通过验收，完成培训与维护交接。</p>
+            <a class="text-link" href="#contact"><span>评估落地条件</span><span class="arrow" aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+      <p class="package-note">以上为人民币服务费参考。周期从约定资料、权限与人员就绪后起算；最终范围、排期及含税总额以正式报价单为准。</p>
+
+      <div class="extras" aria-label="补充服务">
+        <article class="extra">
+          <div class="extra-heading"><h3>跨部门诊断</h3><span class="extra-price">¥19,800 起</span></div>
+          <p>参考 7–10 个工作日。适合问题横跨多个部门、责任与数据关系需要共同梳理的情况，范围经初步沟通后确认。</p>
+        </article>
+        <article class="extra">
+          <div class="extra-heading"><h3>持续运营与优化</h3><span class="extra-price">按月定制</span></div>
+          <p>维护企业上下文与知识库，更新规则、复盘异常、持续优化。按每月投入、变更额度和响应要求单独报价。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="terms" id="terms" aria-labelledby="terms-title">
+      <div class="wrap">
+        <div class="terms-head">
+          <div class="section-no">02 / 合作说明</div>
+          <div><h2 id="terms-title">先约定范围，再分阶段投入。</h2><p>每阶段都可以独立决策。根据证据继续、调整或停止，下一阶段另行确认。</p></div>
+        </div>
+        <table class="payment-table">
+          <caption style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)">各服务包的建议付款方式与对应交付节点</caption>
+          <thead><tr><th scope="col">服务阶段</th><th scope="col">建议付款方式</th><th scope="col">付款对应节点</th></tr></thead>
+          <tbody>
+            <tr><td>诊断</td><td>100% 预付</td><td>确认范围与排期后启动，按约定清单交付。</td></tr>
+            <tr><td>单场景验证</td><td>50% / 30% / 20%</td><td>启动 / 原型完成 / 试跑验收。</td></tr>
+            <tr><td>生产化落地</td><td>40% / 30% / 20% / 10%</td><td>启动 / 核心功能完成 / 试运行验收 / 交接。</td></tr>
+          </tbody>
+        </table>
+        <p class="terms-note">诊断如需适配企业采购流程，可协商 70% 启动、30% 交付；具体付款及验收期限写入合同。</p>
+        <div class="faq">
+          <details>
+            <summary>报价包含什么，哪些费用单独计算？</summary>
+            <p>服务费包含正式报价单中列明的咨询、实施及交付工作。模型/API、第三方软件、硬件、差旅驻场、额外接口与 7×24 支持按需单列；新增场景、部门或交付要求，经双方确认费用与排期后执行。含税口径、发票类型与税额在正式报价单中明确。</p>
+          </details>
+          <details>
+            <summary>5 个工作日诊断，需要企业准备什么？</summary>
+            <p>指定一位业务负责人，提供现有流程资料和可合法使用的代表性样本，并安排关键角色访谈。标准诊断围绕一个流程展开，含一次结论沟通与一轮反馈修订，不含开发、批量数据清洗或系统实施。资料不齐、需驻场或范围更复杂时，先确认新的排期与报价。</p>
+          </details>
+          <details>
+            <summary>如何判断项目交付了，有没有效果承诺？</summary>
+            <p>启动前共同确认范围、测试样本、现状基线、目标指标和验收人。基础费用对应可核验的交付；如约定运行效果款，通常不超过合同金额的 10%–20%，并明确客户配合条件。营收增长、整体降本等长期经营结果作为观察目标，不作为基础合同款的保底承诺。</p>
+          </details>
+          <details>
+            <summary>需要替换现有 ERP、MES、CRM 吗？</summary>
+            <p>既有系统继续承载确定性流程、标准数据和计划状态。我们从一个真实场景切入，补齐临时变化、异常处理与跨系统协同；是否接入、以什么权限接入、能否写回，均在范围确认时约定。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact wrap" id="contact" aria-labelledby="contact-title">
+      <div class="contact-panel">
+        <div>
+          <div class="section-no">03 / 开始合作</div>
+          <h2 id="contact-title">带一个真实问题，<br>先聊 <span class="accent">30 分钟。</span></h2>
+          <p class="contact-copy">先判断问题与服务是否适配。沟通后 48 小时内反馈：是否值得进入付费诊断、建议从哪个场景开始，以及需要准备哪些资料。</p>
+          <p class="contact-outcome">扫码时可备注：所在行业、当前问题、希望改善的环节。样本可先脱敏。</p>
+          <p class="contact-start">首次适配沟通免费 · 单场景诊断 ¥12,800 / 5 个工作日</p>
+        </div>
+        <figure class="contact-qr">
+          <img src="assets/wechat-qr.jpg" alt="章叶军的微信联系二维码，可使用微信扫码沟通服务范围" width="962" height="1231" loading="lazy">
+          <figcaption>章叶军 · 微信扫码沟通</figcaption>
+        </figure>
+      </div>
+      <footer><span>© 2026 杭州翊凌智策科技有限公司</span><span>最终服务范围与费用以双方确认的报价及合同为准</span></footer>
+    </section>
+  </main>
+</body>
+</html>

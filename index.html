@@ -50,10 +50,6 @@
       outline: 2px solid var(--accent);
       outline-offset: 6px;
     }
-    [contenteditable="true"]:focus-visible {
-      outline: 1px dashed var(--accent);
-      outline-offset: 8px;
-    }
 
     .site-header {
       position: fixed;
@@ -388,6 +384,7 @@
       line-height: 1.35;
     }
     .contact p { max-width: 690px; margin: 22px 0 0; color: var(--muted); }
+    .quote-link { color: var(--accent); border-bottom: 1px solid currentColor; white-space: nowrap; }
     .contact-qr {
       display: grid;
       justify-items: center;
@@ -430,8 +427,8 @@
     @media (max-width: 768px) {
       :root { --page: calc(100vw - 44px); --section-y: 92px; }
       .nav { height: 70px; }
-      .brand small, .nav-links a:not(:last-child) { display: none; }
-      .nav-links { gap: 0; }
+      .brand small, .nav-links a:not(.mobile-link) { display: none; }
+      .nav-links { gap: 20px; }
       .hero { min-height: auto; padding-top: 150px; padding-bottom: 104px; }
       .hero h1 { font-size: clamp(44px, 12vw, 74px); }
       .section-head, .process, .founder, .system-principle { grid-template-columns: 1fr; gap: 26px; }
@@ -492,7 +489,8 @@
         <a href="#service">流程</a>
         <a href="#cases">案例</a>
         <a href="#capability">能力</a>
-        <a href="#contact">联系</a>
+        <a class="mobile-link" href="pricing.html">服务报价</a>
+        <a class="mobile-link" href="#contact">联系</a>
       </div>
     </nav>
   </header>
@@ -717,6 +715,7 @@
           <div>
             <h2>带一个真实问题或异常样本，聊聊 AI 应该从哪里开始。</h2>
             <p>第一次沟通只判断三件事：问题是否值得做、第一阶段做什么、怎样用真实样本验证。</p>
+            <p>服务范围、周期与费用，查看 <a class="quote-link" href="pricing.html">服务报价 ↗</a>。</p>
           </div>
           <figure class="contact-qr">
             <img src="assets/wechat-qr.jpg" alt="章叶军个人微信二维码" width="962" height="1231">
@@ -731,7 +730,6 @@
     </section>
   </main>
 
-  <!-- FALLBACK: vendor/pretext.js missing, using CDN -->
   <script type="module">
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const revealItems = document.querySelectorAll('.reveal');
@@ -747,31 +745,6 @@
         });
       }, { threshold: .12 });
       revealItems.forEach(item => observer.observe(item));
-    }
-
-    try {
-      const { prepare, layout } = await import('https://esm.sh/@chenglou/pretext');
-      await document.fonts.ready;
-      const elements = document.querySelectorAll('[contenteditable="true"]');
-      const prepared = new Map();
-      for (const el of elements) prepared.set(el, prepare(el.textContent, getComputedStyle(el).font));
-      const relayout = () => {
-        for (const [el, handle] of prepared) {
-          const style = getComputedStyle(el);
-          const result = layout(handle, el.clientWidth, parseFloat(style.lineHeight));
-          if (result?.height) el.style.minHeight = `${result.height}px`;
-        }
-      };
-      new ResizeObserver(relayout).observe(document.body);
-      for (const el of document.querySelectorAll('[contenteditable="true"]')) {
-        new MutationObserver(() => {
-          prepared.set(el, prepare(el.textContent, getComputedStyle(el).font));
-          relayout();
-        }).observe(el, { characterData: true, subtree: true, childList: true });
-      }
-      relayout();
-    } catch (error) {
-      console.info('Pretext enhancement unavailable; native responsive layout remains active.');
     }
   </script>
 </body>
